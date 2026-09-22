@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de HTML, CSS e JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Formulário de HTML, CSS e JS</h1>
+    <h2>Perguntas e Respostas</h2>
+
+    <form action="#" method="POST">
+        
+        <!-- Campo para digitar o nome -->
+        <div style="margin-bottom: 20px;">
+            <label for="nome" style="font-weight: bold; font-size: 16px; display: block; margin-bottom: 8px;">Digite seu nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required style="padding: 10px; width: 300px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px;">
+        </div>
+
+        <table border="1" style="border-collapse: collapse; width: 100%; cellpadding: 10px;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="width: 30%; text-align: left; padding: 10px;">Pergunta</th>
+                    <th style="width: 70%; text-align: left; padding: 10px;">Opções de Resposta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Pergunta 1 -->
+                <tr>
+                    <td style="padding: 10px; font-weight: bold;">1. O que é HTML?</td>
+                    <td style="padding: 10px;">
+                        <label><input type="radio" name="q1" value="a"> É um banco de dados.</label><br>
+                        <label><input type="radio" name="q1" value="b"> É uma linguagem relacionada ao javascript.</label><br>
+                        <label><input type="radio" name="q1" value="c"> HTML é uma linguagem de marcação usada para criar páginas da web.</label><br>
+                        <label><input type="radio" name="q1" value="d"> É um sistema operacional.</label>
+                    </td>
+                </tr>
+                <!-- Pergunta 2 -->
+                <tr>
+                    <td style="padding: 10px; font-weight: bold;">2. O que é CSS?</td>
+                    <td style="padding: 10px;">
+                        <label><input type="radio" name="q2" value="a"> CSS é uma linguagem de estilo usada para definir a aparência de elementos HTML.</label><br>
+                        <label><input type="radio" name="q2" value="b"> Controla o computador.</label><br>
+                        <label><input type="radio" name="q2" value="c"> Edita vídeos.</label><br>
+                        <label><input type="radio" name="q2" value="d"> CSS é um programa usado para criar e editar arquivos de texto.</label>
+                    </td>
+                </tr>
+                <!-- Pergunta 3 -->
+                <tr>
+                    <td style="padding: 10px; font-weight: bold;">3. O que é JavaScript?</td>
+                    <td style="padding: 10px;">
+                        <label><input type="radio" name="q3" value="a"> JavaScript é uma linguagem de programação usada para adicionar interatividade às páginas da web.</label><br>
+                        <label><input type="radio" name="q3" value="b"> É usado para criar páginas da internet.</label><br>
+                        <label><input type="radio" name="q3" value="c"> Serve para organizar arquivos no computador.</label><br>
+                        <label><input type="radio" name="q3" value="d"> É uma ferramenta para desenhar imagens.</label>
+                    </td>
+                </tr>
+                <!-- Pergunta 4 -->
+                <tr>
+                    <td style="padding: 10px; font-weight: bold;">4. O que é uma linguagem de programação?</td>
+                    <td style="padding: 10px;">
+                        <label><input type="radio" name="q4" value="a"> Um idioma falado por pessoas.</label><br>
+                        <label><input type="radio" name="q4" value="b"> Uma forma de escrever instruções para o computador.</label><br>
+                        <label><input type="radio" name="q4" value="c"> Um tipo de arquivo de música.</label><br>
+                        <label><input type="radio" name="q4" value="d"> Um programa para editar fotos.</label>
+                    </td>
+                </tr>
+                <!-- Pergunta 5 -->
+                <tr>
+                    <td style="padding: 10px; font-weight: bold;">5. Qual é a principal diferença entre HTML e CSS?</td>
+                    <td style="padding: 10px;">
+                        <label><input type="radio" name="q5" value="a"> HTML e CSS são a mesma coisa.</label><br>
+                        <label><input type="radio" name="q5" value="b"> HTML cria a estrutura e CSS cuida do visual.</label><br>
+                        <label><input type="radio" name="q5" value="c"> CSS cria o conteúdo da página.</label><br>
+                        <label><input type="radio" name="q5" value="d"> CSS é usado para texto.</label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <br>
+        <button type="submit" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">Enviar Respostas</button>
+    </form>
+
+</body>
+</html>
